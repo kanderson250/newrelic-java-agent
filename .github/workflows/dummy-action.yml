@@ -42,19 +42,25 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@users.noreply.github.com"
-
-      - name: Create reports directory
-        run: |
-          mkdir -p reports
-      
-      - name: Download html folder
-        uses: actions/download-artifact@v3
-        with: 
-          name: html_downloads_artifact
-          path: reports
           
-      - name: Check git status
-        run: git status
+      - name: Print working directory
+        run: pwd
+      
+      - name: List all 
+        run: ls -a
+
+#       - name: Create reports directory
+#         run: |
+#           mkdir -p reports
+      
+#       - name: Download html folder
+#         uses: actions/download-artifact@v3
+#         with: 
+#           name: html_downloads_artifact
+#           path: reports
+          
+#       - name: Check git status
+#         run: git status
           
 #       - name: View available resources
 #         run: |
