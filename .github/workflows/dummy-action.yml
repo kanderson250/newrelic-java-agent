@@ -52,6 +52,9 @@ jobs:
         with: 
           name: html_downloads_artifact
           path: ph-pages/reports
+          
+      - name: View available resources
+        run: ls
 
 #       - name: Copy test reports to gh-pages branch
 #         run: |
