@@ -54,7 +54,7 @@ jobs:
           path: reports
           
       - name: Check git status
-        run: git st
+        run: git status
           
 #       - name: View available resources
 #         run: |
