@@ -45,25 +45,28 @@ jobs:
 
       - name: Create reports directory
         run: |
-          mkdir -p gh-pages/reports
+          mkdir -p reports
       
       - name: Download html folder
         uses: actions/download-artifact@v3
         with: 
           name: html_downloads_artifact
-          path: gh-pages/reports
+          path: reports
           
-      - name: View available resources
-        run: |
-          cd gh-pages
-          ls -R
-
-#       - name: Copy test reports to gh-pages branch
+      - name: Check git status
+        run: git st
+          
+#       - name: View available resources
 #         run: |
-#           cp -r html_downloads gh-pages/reports
+#           cd gh-pages/reports
+          
 
-      - name: Commit and push test reports to gh-pages
-        run: |
-          git add .
-          git commit -m "Update test reports"
-          git push
+# #       - name: Copy test reports to gh-pages branch
+# #         run: |
+# #           cp -r html_downloads gh-pages/reports
+
+#       - name: Commit and push test reports to gh-pages
+#         run: |
+#           git add .
+#           git commit -m "Update test reports"
+#           git push
