@@ -64,6 +64,7 @@ jobs:
           
       - name: Commit and push test reports to gh-pages
         run: |
-          git add gh-pages/reports/* -f
+          cd gh-pages
+          git add -f reports/*
           git commit -m "Update test reports"
           git push
