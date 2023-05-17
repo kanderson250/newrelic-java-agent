@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.908s</div>
+<div class="counter">0.814s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">laspDisabledLocalDefault</td>
-<td class="success">0.010s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">laspDisabledServerOverridesLocal</td>
-<td class="success">0.012s</td>
+<td class="success">0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">mostSecureWins</td>
-<td class="success">0.022s</td>
+<td class="success">0.026s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,22 +99,22 @@
 </tr>
 <tr>
 <td class="success">mostSecureWinsLaspMostSecure</td>
-<td class="success">0.015s</td>
+<td class="success">0.022s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">mostSecureWinsMessageParametersAttrsRemoved</td>
-<td class="success">0.797s</td>
+<td class="success">0.670s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">noLocalOrServerLaspEnabled</td>
-<td class="success">0.011s</td>
+<td class="success">0.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">serverOverridesLocal</td>
-<td class="success">0.017s</td>
+<td class="success">0.026s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -122,59 +122,59 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-05-17T19:55:25,601+0000 [9815 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false}}
-2023-05-17T19:55:25,635+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,638+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,639+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,688+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,688+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,689+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,711+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,712+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,713+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,717+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,720+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,720+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,723+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,724+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,725+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,727+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,730+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,731+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,747+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,747+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,747+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,751+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,751+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,752+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,756+0000 [9815 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false}}
-2023-05-17T19:55:25,757+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,757+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,757+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,759+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,759+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,760+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,773+0000 [9815 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false}}
-2023-05-17T19:55:25,777+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,779+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,779+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,785+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,787+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,787+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,803+0000 [9815 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false}}
-2023-05-17T19:55:25,804+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,805+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,806+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,813+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,814+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,814+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,824+0000 [9815 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false}}
-2023-05-17T19:55:25,825+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,825+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,825+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:55:25,828+0000 [9815 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:55:25,829+0000 [9815 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:55:25,830+0000 [9815 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+<pre>2023-05-17T19:58:15,520+0000 [12372 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false}}
+2023-05-17T19:58:15,540+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,541+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,541+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,585+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,585+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,585+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,596+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,600+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,601+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,604+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,605+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,605+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,611+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,611+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,611+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,614+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,623+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,623+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,641+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,641+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,641+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,648+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,649+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,649+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,655+0000 [12372 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false}}
+2023-05-17T19:58:15,656+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,656+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,663+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,666+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,669+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,670+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,685+0000 [12372 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false}}
+2023-05-17T19:58:15,685+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,685+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,686+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,691+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,691+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,691+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,709+0000 [12372 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:true,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false}}
+2023-05-17T19:58:15,710+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,710+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,710+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,720+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,720+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,720+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,730+0000 [12372 1] com.newrelic INFO: LASP Policies received from server side: {&quot;record_sql&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;allow_raw_exception_messages&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_events&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;message_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;job_arguments&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_instrumentation_editor&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;custom_parameters&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false},&quot;attributes_include&quot;:{&quot;enabled&quot;:false,&quot;required&quot;:false}}
+2023-05-17T19:58:15,731+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,731+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,731+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T19:58:15,733+0000 [12372 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T19:58:15,734+0000 [12372 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T19:58:15,734+0000 [12372 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
 </pre>
 </span>
 </div>
@@ -186,7 +186,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at May 17, 2023 8:01:14 PM</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at May 17, 2023 8:02:02 PM</p>
 </div>
 </div>
 </body>
