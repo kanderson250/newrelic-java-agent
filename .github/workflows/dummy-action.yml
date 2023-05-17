@@ -46,21 +46,18 @@ jobs:
       - name: Move into gh-pages
         run: |
           cd gh-pages
-          pwd
-          ls -a
-
-#       - name: Create reports directory
-#         run: |
-#           mkdir -p reports
+          mkdir reports
       
-#       - name: Download html folder
-#         uses: actions/download-artifact@v3
-#         with: 
-#           name: html_downloads_artifact
-#           path: reports
+      - name: Download html folder
+        uses: actions/download-artifact@v3
+        with: 
+          name: html_downloads_artifact
+          path: gh-pages/reports
           
-#       - name: Check git status
-#         run: git status
+      - name: Check git status
+        run: |
+          cd gh-pages
+          git status
           
 #       - name: View available resources
 #         run: |
