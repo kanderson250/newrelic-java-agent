@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.588s</div>
+<div class="counter">0.695s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">exclusiveTime</td>
-<td class="success">0.407s</td>
+<td class="success">0.408s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">sizeofArray</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">sizeofStackTrace</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -109,7 +109,7 @@
 </tr>
 <tr>
 <td class="success">testAllSupportabilityMetrics</td>
-<td class="success">0.037s</td>
+<td class="success">0.078s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -119,12 +119,12 @@
 </tr>
 <tr>
 <td class="success">testExternalParameters</td>
-<td class="success">0.014s</td>
+<td class="success">0.033s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testExternalParametersNullHost</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -134,32 +134,32 @@
 </tr>
 <tr>
 <td class="success">testInstanceButNoPortSupportabilityMetrics</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testInstanceLevelMetricLocalhost</td>
-<td class="success">0.007s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testInstanceLevelMetrics</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testInstanceLevelMetricLocalhost</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInstanceLevelMetrics</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testMultiTransactionSpanEvents</td>
-<td class="success">0.031s</td>
+<td class="success">0.010s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNameTx</td>
-<td class="success">0.009s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNoParametersInUri</td>
-<td class="success">0s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -169,47 +169,47 @@
 </tr>
 <tr>
 <td class="success">testParameters</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testParent</td>
-<td class="success">0.002s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSpanEvent</td>
-<td class="success">0.001s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSpanEventDatastore</td>
-<td class="success">0.001s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSpanEventHttp</td>
-<td class="success">0.007s</td>
+<td class="success">0.020s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSpanParentingEvent</td>
-<td class="success">0.013s</td>
+<td class="success">0.024s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTokenRefNoOpToken</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testTokenRefToken</td>
 <td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testTokenRefToken</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testTransactionABParenting</td>
-<td class="success">0.043s</td>
+<td class="success">0.053s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -217,22 +217,22 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-05-17T19:57:00,443+0000 [10144 1] com.newrelic INFO: Using configured collector host: nope.example.invalid
-2023-05-17T19:57:00,449+0000 [10144 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:57:00,449+0000 [10144 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:57:00,641+0000 [10144 1] com.newrelic.agent.extension.ExtensionService ERROR: Unable to read extensions from the agent jar : java.io.FileNotFoundException: /home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main (Is a directory)
-2023-05-17T19:57:00,657+0000 [10144 1] com.newrelic INFO: Instrumenting exception handler signature test.newrelic.test.agent.ExceptionHandlerTest$ExceptionHandler.handleException2(Ljava/lang/String;Ljava/lang/Throwable;)V
-2023-05-17T19:57:00,685+0000 [10144 1] com.newrelic ERROR: No instrumentation packages were found in the agent.
-2023-05-17T19:57:00,753+0000 [10144 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at nope.example.invalid:80
-2023-05-17T19:57:01,002+0000 [10144 1] com.newrelic INFO: Setting audit_mode to false
-2023-05-17T19:57:01,156+0000 [10144 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/resources/test/com/newrelic/agent/config/span_events.yml
-2023-05-17T19:57:01,157+0000 [10144 1] com.newrelic.agent.config.ConfigServiceImpl WARN: The apdex_t setting is obsolete and is ignored! Set the apdex_t value for an application in New Relic UI
-2023-05-17T19:57:01,221+0000 [10144 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:57:01,222+0000 [10144 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:57:01,222+0000 [10144 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T19:57:01,302+0000 [10144 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T19:57:01,303+0000 [10144 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T19:57:01,303+0000 [10144 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+<pre>2023-05-17T20:00:52,058+0000 [16008 1] com.newrelic INFO: Using configured collector host: nope.example.invalid
+2023-05-17T20:00:52,069+0000 [16008 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T20:00:52,074+0000 [16008 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T20:00:52,471+0000 [16008 1] com.newrelic.agent.extension.ExtensionService ERROR: Unable to read extensions from the agent jar : java.io.FileNotFoundException: /home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main (Is a directory)
+2023-05-17T20:00:52,500+0000 [16008 1] com.newrelic INFO: Instrumenting exception handler signature test.newrelic.test.agent.ExceptionHandlerTest$ExceptionHandler.handleException2(Ljava/lang/String;Ljava/lang/Throwable;)V
+2023-05-17T20:00:52,551+0000 [16008 1] com.newrelic ERROR: No instrumentation packages were found in the agent.
+2023-05-17T20:00:52,691+0000 [16008 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at nope.example.invalid:80
+2023-05-17T20:00:53,078+0000 [16008 1] com.newrelic INFO: Setting audit_mode to false
+2023-05-17T20:00:53,422+0000 [16008 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/resources/test/com/newrelic/agent/config/span_events.yml
+2023-05-17T20:00:53,422+0000 [16008 1] com.newrelic.agent.config.ConfigServiceImpl WARN: The apdex_t setting is obsolete and is ignored! Set the apdex_t value for an application in New Relic UI
+2023-05-17T20:00:53,557+0000 [16008 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T20:00:53,558+0000 [16008 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T20:00:53,559+0000 [16008 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T20:00:53,673+0000 [16008 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T20:00:53,674+0000 [16008 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T20:00:53,674+0000 [16008 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
 </pre>
 </span>
 </div>
@@ -244,7 +244,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at May 17, 2023 8:02:02 PM</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at May 17, 2023 8:03:05 PM</p>
 </div>
 </div>
 </body>
