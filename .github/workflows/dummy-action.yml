@@ -60,17 +60,9 @@ jobs:
           ls
           git status
           
-#       - name: View available resources
-#         run: |
-#           cd gh-pages/reports
-          
-
-# #       - name: Copy test reports to gh-pages branch
-# #         run: |
-# #           cp -r html_downloads gh-pages/reports
-
-#       - name: Commit and push test reports to gh-pages
-#         run: |
-#           git add .
-#           git commit -m "Update test reports"
-#           git push
+      - name: Commit and push test reports to gh-pages
+        run: |
+          cd gh-pages/reports
+          git add .
+          git commit -m "Update test reports"
+          git push
