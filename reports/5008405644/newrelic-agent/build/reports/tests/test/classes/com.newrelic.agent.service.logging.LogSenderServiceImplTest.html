@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.662s</div>
+<div class="counter">2.500s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,27 +79,27 @@
 </thead>
 <tr>
 <td class="success">testHarvestableConfigure</td>
-<td class="success">0.018s</td>
+<td class="success">0.036s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testHighSecurity</td>
-<td class="success">0.021s</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testNoTransaction</td>
-<td class="success">0.026s</td>
+<td class="success">0.038s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTransactionHarvest</td>
-<td class="success">1.572s</td>
+<td class="success">2.370s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testWithTransaction</td>
-<td class="success">0.025s</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,43 +107,43 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-05-17T22:27:54,666+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:54,673+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:54,674+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:54,736+0000 [10798 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
-2023-05-17T22:27:55,217+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:55,219+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:55,220+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:55,251+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,278+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,280+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,430+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:55,430+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:55,431+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:55,437+0000 [10798 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
-2023-05-17T22:27:55,448+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:55,448+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:55,449+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:55,460+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,465+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,466+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,475+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:55,476+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:55,477+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:55,481+0000 [10798 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
-2023-05-17T22:27:55,486+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:55,487+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:55,487+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:55,496+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:55,496+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:55,497+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:55,499+0000 [10798 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
-2023-05-17T22:27:55,506+0000 [10798 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
-2023-05-17T22:27:55,507+0000 [10798 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
-2023-05-17T22:27:55,507+0000 [10798 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
-2023-05-17T22:27:55,511+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,514+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
-2023-05-17T22:27:55,516+0000 [10798 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+<pre>2023-05-17T22:28:43,515+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:43,535+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:43,536+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:43,610+0000 [10867 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
+2023-05-17T22:28:44,245+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:44,246+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:44,246+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:44,336+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,361+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,371+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,620+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:44,621+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:44,622+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:44,635+0000 [10867 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
+2023-05-17T22:28:44,654+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:44,655+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:44,656+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:44,668+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,673+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,676+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,699+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:44,700+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:44,700+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:44,706+0000 [10867 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
+2023-05-17T22:28:44,710+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:44,710+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:44,710+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:44,719+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:44,720+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:44,720+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:44,723+0000 [10867 1] com.newrelic INFO: The property async_timeout is deprecated. Change to token_timeout
+2023-05-17T22:28:44,733+0000 [10867 1] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2023-05-17T22:28:44,733+0000 [10867 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-17T22:28:44,733+0000 [10867 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-17T22:28:44,736+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,741+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
+2023-05-17T22:28:44,742+0000 [10867 1] com.newrelic WARN: Cannot get entity.guid from getLinkingMetadata() until RPMService has initialized.
 </pre>
 </span>
 </div>
@@ -155,7 +155,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at May 17, 2023 10:34:39 PM</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at May 17, 2023 10:36:07 PM</p>
 </div>
 </div>
 </body>
