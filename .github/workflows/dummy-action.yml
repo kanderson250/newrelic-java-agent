@@ -22,7 +22,7 @@ jobs:
         run: |
           cd html_downloads
           echo 'This is the first file' > alpha.html
-          echo 'This is the second file' > beta.html
+          echo 'This is the modified second file' > beta.html
           echo 'And this is the last file' > omega.html
           cd .. 
           
@@ -65,6 +65,6 @@ jobs:
       - name: Commit and push test reports to gh-pages
         run: |
           cd gh-pages
-          git add reports/*
+          git add -f reports/*
           git commit -m "Update test reports"
           git push
