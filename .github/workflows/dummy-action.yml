@@ -46,7 +46,7 @@ jobs:
       - name: Move into gh-pages
         run: |
           cd gh-pages
-          mkdir reports
+          mkdir -p reports
       
       - name: Download html folder
         uses: actions/download-artifact@v3
