@@ -57,7 +57,7 @@ jobs:
       - name: Check git status and folder contents
         run: |
           cd gh-pages
-          ls -R
+          ls -a
           cd ./reports
           ls
           git status
