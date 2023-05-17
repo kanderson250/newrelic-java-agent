@@ -44,13 +44,10 @@ jobs:
           git config --global user.email "actions@users.noreply.github.com"
       
       - name: Move into gh-pages
-        run: cd gh-pages
-          
-      - name: Print working directory
-        run: pwd
-      
-      - name: List all 
-        run: ls -a
+        run: |
+          cd gh-pages
+          pwd
+          ls -a
 
 #       - name: Create reports directory
 #         run: |
