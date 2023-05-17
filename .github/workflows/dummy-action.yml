@@ -54,9 +54,10 @@ jobs:
           name: html_downloads_artifact
           path: gh-pages/reports
           
-      - name: Check git status
+      - name: Check git status and folder contents
         run: |
-          cd gh-pages
+          cd gh-pages/reports
+          ls
           git status
           
 #       - name: View available resources
