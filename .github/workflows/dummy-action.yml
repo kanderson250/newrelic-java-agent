@@ -56,13 +56,15 @@ jobs:
           
       - name: Check git status and folder contents
         run: |
-          cd gh-pages/reports
+          cd gh-pages/.gitignore
+          ls
+          cd ../reports
           ls
           git status
           
-      - name: Commit and push test reports to gh-pages
-        run: |
-          cd gh-pages/reports
-          git add .
-          git commit -m "Update test reports"
-          git push
+#       - name: Commit and push test reports to gh-pages
+#         run: |
+#           cd gh-pages/reports
+#           git add .
+#           git commit -m "Update test reports"
+#           git push
