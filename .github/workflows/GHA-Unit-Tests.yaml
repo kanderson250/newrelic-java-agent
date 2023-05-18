@@ -172,7 +172,7 @@ jobs:
         if: ${{ failure() }}
         run: |
           cd gh-pages
-          git add reports/*
+          git add -f reports/*
           git commit -m 'Update test reports for ${{ github.run_id}} on Java version ${{ matrix.java-version }}'
           git push
           echo -e "View reports for this run: \e]8;;https:/kanderson250/newrelic-java-agent/reports/${{ github.run_id }}/${{ matrix.java-version }}/index.html\aClick Here\e]8;;\a"
