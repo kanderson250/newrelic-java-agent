@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.newrelic.agent.browser.BrowserConfigTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.newrelic.agent.browser.BrowserConfigTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.newrelic.agent.browser.html">com.newrelic.agent.browser</a> &gt; BrowserConfigTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.862s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testFooterCaptureAgnetAndUserAttsOneAndSsl</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFooterCaptureAtts</td>
+<td class="success">2.470s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFooterCaptureAttsOneAndSsl</td>
+<td class="success">0.038s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFooterCaptureParamsNoParams</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFooterNoCaptureParams</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFooterNoCaptureParamsNoAgentFile</td>
+<td class="success">0.059s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFooterWithNonce</td>
+<td class="success">0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeader</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeaderNoAgentFile</td>
+<td class="success">0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHeaderWithNonce</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRumDisableNoAgentFile</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRumDisabled</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-05-18T22:06:04,526+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:04,540+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:04,540+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,141+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,142+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,142+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,167+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,167+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,168+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,243+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,243+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,243+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,249+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,285+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,286+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,286+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,314+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,315+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,315+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,323+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,323+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,323+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,326+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,326+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,326+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,341+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,342+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,342+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,342+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,354+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,354+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,355+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,369+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,370+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,370+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,373+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,373+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,373+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,374+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,375+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,375+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,376+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,401+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,401+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,401+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,415+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,415+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,415+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,422+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,423+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,423+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,425+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,426+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,426+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,427+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,456+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,457+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,457+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,472+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,472+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,472+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,476+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,476+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,477+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,478+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,485+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,485+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,485+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,500+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,500+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,501+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,506+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,506+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,506+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,508+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,509+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,509+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,510+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,512+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,512+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,512+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,520+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,520+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,520+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,527+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,530+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,531+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,539+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,539+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,539+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,540+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,547+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,547+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,547+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,560+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,560+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,561+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,562+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,563+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,563+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,564+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,564+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,565+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,566+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,566+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,567+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,567+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,580+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,580+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,581+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,586+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,587+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,587+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,589+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,589+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,589+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,590+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,591+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,591+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,592+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,607+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,607+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,607+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,613+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,613+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,613+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,615+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,615+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,615+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,616+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,616+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,616+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,616+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,625+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,625+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,625+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,636+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,636+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,636+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,637+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,637+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,637+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,639+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+2023-05-18T22:06:06,639+0000 [11946 1] com.newrelic INFO: Using configured collector host: no-collector.example.com
+2023-05-18T22:06:06,639+0000 [11946 1] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,640+0000 [11946 1] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,660+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,660+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,665+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,669+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,670+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,671+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,673+0000 [11946 1] com.newrelic INFO: Using region aware collector host: collector.asdfghjkloiuytrewq1234567890z.nr-data.net
+2023-05-18T22:06:06,673+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the metric_ingest_uri property. Currently using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2023-05-18T22:06:06,673+0000 [11946 1] com.newrelic INFO: Unrecognized region parsed from license_key, please explicitly set the event_ingest_uri property. Currently using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2023-05-18T22:06:06,674+0000 [11946 1] com.newrelic INFO: Using RUM version 248 for application &quot;appName&quot;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at May 18, 2023 10:11:17 PM</p>
+</div>
+</div>
+</body>
+</html>
