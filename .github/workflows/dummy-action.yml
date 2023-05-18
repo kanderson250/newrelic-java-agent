@@ -61,16 +61,13 @@ jobs:
         with: 
           name: html_downloads_artifact
           path: gh-pages/test_folder_structure
-      
-      - name: Add index.html file
-        run: touch gh-pages/test_folder_structure/index.html
      
      # Prepare to run the indexing script
       - name: Set up Python
         uses: actions/setup-python@v3
         
       - name: Run indexing script
-        run: python gh-pages/ghpages_utils/generateFolderStructureHTML.py gh-pages/test_folder_structure gh_pages/test_folder_structure/index.html
+        run: python gh-pages/ghpages_utils/generateFolderStructureHTML.py gh-pages/test_folder_structure gh-pages/test_folder_structure/index.html
           
       - name: Commit and push test reports to gh-pages
         run: |
