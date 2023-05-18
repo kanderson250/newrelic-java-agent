@@ -1,18 +1,31 @@
 import os
 import argparse
 
+js_string = '''
+    document.addEventListener('DOMContentLoaded', function() {
+    var folders = document.getElementsByClassName('folder-name');
+
+    for (var i = 0; i < folders.length; i++) {
+        folders[i].addEventListener('click', function(e) {
+        e.stopPropagation();
+        this.parentNode.classList.toggle('open');
+        });
+    }
+    });
+'''
 
 def generate_folder_structure(path):
     html = ""
     for item in os.listdir(path):
         item_path = os.path.join(path, item)
         if os.path.isdir(item_path):
-            html += f'<div class="folder">'
-            html += f'<div class="folder-name">{item}</div>'
+            html += f'<ul>'
+            html += f'<li ><span class="folder-name">{item}</span>'
             html += generate_folder_structure(item_path)  # Recursively generate subfolders and files
-            html += f'</div>'
+            html += f'</li>'
+            html += f'</ul>'
         elif item.endswith('.html'):
-            html += f'<div class="file"><a href="{item_path}">{item}</a></div>'
+            html += f'<li class="file"><a href="{item_path}">{item}</a></li>'
     return html
 
 def writeHTMLFileStructure(rootPath, destinationPath):
@@ -27,14 +40,11 @@ def writeHTMLFileStructure(rootPath, destinationPath):
     <head>
     <title>File Structure</title>
     <style>
-        .folder {{
-        padding-left: 20px;
+        li > ul{{
+        display: none;
         }}
-        .folder-name {{
-        cursor: pointer;
-        }}
-        .file {{
-        padding-left: 40px;
+        li.open > ul {{
+        display: block;
         }}
     </style>
     </head>
@@ -43,13 +53,21 @@ def writeHTMLFileStructure(rootPath, destinationPath):
 
     {html_structure}
 
+    <script src='myJavascript.js'></script>
     </body>
     </html>
     '''
 
+    parDir = os.path.dirname(destinationPath)
+    jsFilePath = os.path.join(parDir, "myJavascript.js")
+
     # Save the HTML document to a file
     with open(destinationPath, 'w') as file:
         file.write(html_document)
+    
+    with open(jsFilePath, 'w') as file:
+        file.write(js_string)
+        print(jsFilePath)
 
 
 if __name__ == '__main__':
