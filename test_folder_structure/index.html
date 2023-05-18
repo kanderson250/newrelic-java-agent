@@ -4,22 +4,20 @@
     <head>
     <title>File Structure</title>
     <style>
-        .folder {
-        padding-left: 20px;
+        li > ul{
+        display: none;
         }
-        .folder-name {
-        cursor: pointer;
-        }
-        .file {
-        padding-left: 40px;
+        li.open > ul {
+        display: block;
         }
     </style>
     </head>
     <body>
     <h1>File Structure</h1>
 
-    <div class="folder"><div class="folder-name">first_directory</div><div class="file"><a href="gh-pages/test_folder_structure/first_directory/another.html">another.html</a></div><div class="file"><a href="gh-pages/test_folder_structure/first_directory/alpha.html">alpha.html</a></div></div><div class="folder"><div class="folder-name">third_directory</div><div class="folder"><div class="folder-name">fourth_directory</div><div class="file"><a href="gh-pages/test_folder_structure/third_directory/fourth_directory/omega.html">omega.html</a></div></div></div><div class="folder"><div class="folder-name">second_directory</div><div class="file"><a href="gh-pages/test_folder_structure/second_directory/beta.html">beta.html</a></div></div>
+    <li class="file"><a href="gh-pages/test_folder_structure/index.html">index.html</a></li><ul><li ><span class="folder-name">first_directory</span><li class="file"><a href="gh-pages/test_folder_structure/first_directory/another.html">another.html</a></li><li class="file"><a href="gh-pages/test_folder_structure/first_directory/alpha.html">alpha.html</a></li></li></ul><ul><li ><span class="folder-name">third_directory</span><ul><li ><span class="folder-name">fourth_directory</span><li class="file"><a href="gh-pages/test_folder_structure/third_directory/fourth_directory/omega.html">omega.html</a></li></li></ul></li></ul><ul><li ><span class="folder-name">second_directory</span><li class="file"><a href="gh-pages/test_folder_structure/second_directory/beta.html">beta.html</a></li></li></ul>
 
+    <script src='myJavascript.js'></script>
     </body>
     </html>
     
