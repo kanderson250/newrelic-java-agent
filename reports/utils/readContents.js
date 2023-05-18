@@ -17,7 +17,9 @@ async function run() {
 function writeFilesTo(files, destinationPath) {
   var stream = createWriteStream(destinationPath);
   files.forEach(file => {
-    stream.write(file + '\n')
+      var searchString = '/html';
+      var fileSuffix = file.substring(file.indexOf(searchString) + searchString.length)
+      fileSuffix.length && stream.write(fileSuffix + '\n')
   });
   stream.end();
 }
