@@ -163,7 +163,9 @@ jobs:
       
       - name: Generate Index Page
         if: ${{ failure() }}
-        run: python gh-pages/ghpages_utils/generateFolderStructureHTML.py gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }} gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }}/index.html
+        run: |
+          cd gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }}
+          python ../../../ghpages_utils/generateFolderStructureHTML.py . index.html
           
       - name: Commit and push test reports to gh-pages
         if: ${{ failure() }}
