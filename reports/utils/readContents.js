@@ -1,15 +1,25 @@
 const { resolve } = require('path');
-const { readdir } = require('fs').promises;
+const { createWriteStream } = require('fs');
+const { readdir, writeFile } = require('fs').promises;
 
 const args = process.argv.slice(2);
 
-const [baseDirectory] = args;
+const [baseDirectory, destinationPath] = args;
 
 run();
 
 async function run() {
     result = await getFiles(baseDirectory);
     console.log(result);
+    writeFilesTo(result, destinationPath);
+}
+
+function writeFilesTo(files, destinationPath) {
+  var stream = createWriteStream(destinationPath);
+  files.forEach(file => {
+    stream.write(file + '\n')
+  });
+  stream.end();
 }
 
 async function getFiles(dir) {
