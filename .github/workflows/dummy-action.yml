@@ -17,13 +17,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Make downloads directory
-        run: mkdir html_downloads
+        run: | 
+          mkdir html_downloads
+          cd html_downloads
+          mkdir first_directory
+          mkdir second_directory
+          mkdir third_directory
       - name: Generate html files
         run: |
           cd html_downloads
-          echo 'This is the first file' > alpha.html
-          echo 'This is the modified second file' > beta.html
-          echo 'And this is the last file' > omega.html
+          echo 'This is the first file' > first_directory/alpha.html
+          echo 'This is the modified second file' > second_directory/beta.html
+          echo 'And this is the last file' > third_directory/omega.html
           cd .. 
           
       - name: Upload artifacts
@@ -43,27 +48,28 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@users.noreply.github.com"
       
-      - name: Move into gh-pages
+      - name: Move into gh-pages and make a test directory
         run: |
           cd gh-pages
-          mkdir -p reports/${{ github.run_id }}
+          mkdir -p html_test
       
       - name: Download html folder
         uses: actions/download-artifact@v3
         with: 
           name: html_downloads_artifact
-          path: gh-pages/reports/${{ github.run_id }}
+          path: gh-pages/html_test
+      
+      - name: add an index file
+        run: touch index.txt
           
-      - name: Check git status and folder contents
+      - name: index the html folder
         run: |
-          cd gh-pages
-          cd ./reports/${{ github.run_id }}
-          ls
-          git status
+          cd gh-pages/html_test
+          for f in ./* ; do echo $f >> index.txt; done     
           
       - name: Commit and push test reports to gh-pages
         run: |
           cd gh-pages
-          git add -f reports/*
-          git commit -m "Update test reports"
+          git add -f html_test/*
+          git commit -m "Update html contents reports"
           git push
