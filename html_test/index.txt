@@ -1,0 +1,3 @@
+./first_directory
+./second_directory
+./third_directory
