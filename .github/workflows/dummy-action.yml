@@ -60,12 +60,12 @@ jobs:
           path: gh-pages/html_test
       
       - name: add an index file
-        run: touch index.txt
+        run: touch index.html
           
       - name: index the html folder
         run: |
           cd gh-pages/html_test
-          for f in ./* ; do echo $f >> index.txt; done     
+          for f in ./* ; do echo $f >> index.html; done     
           
       - name: Commit and push test reports to gh-pages
         run: |
