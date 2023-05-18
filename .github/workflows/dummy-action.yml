@@ -61,11 +61,16 @@ jobs:
       
       - name: add an index file
         run: touch index.html
+        
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '19'
           
-      - name: index the html folder
+      - name: Run the js script on the html folder
         run: |
-          cd gh-pages/html_test
-          for f in ./* ; do echo $f >> index.html; done     
+          cd gh-pages
+          node reports/utils/readDir.js html_test     
           
       - name: Commit and push test reports to gh-pages
         run: |
