@@ -157,19 +157,24 @@ jobs:
           name: unit-tests-results-java-${{ matrix.java-version }}
           path: gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }}
           
-      - name: Check git status and folder contents
-        if: ${{ failure() }}
+      - name: Generate Index File
+        if: ${{ failure() }} 
         run: |
-          cd gh-pages
-          cd ./reports/${{ github.run_id }}/${{ matrix.java-version }}
+          cd gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }}
+          echo "<html><body><h1>Test Reports</h1><ul>" > index.html
+          find . -type f -name "*.html" | sort | while read -r file; do
+            link=$(echo "$file" | sed 's/^\.\///')
+            echo "<li><a href='$link'>$link</a></li>" >> index.html
+          done
+          echo "</ul></body></html>" >> index.html    
           
       - name: Commit and push test reports to gh-pages
         if: ${{ failure() }}
         run: |
           cd gh-pages
-          git add -f reports/*
+          git add reports/*
           git commit -m 'Update test reports for ${{ github.run_id}} on Java version ${{ matrix.java-version }}'
           git push
-    
+          echo -e "View reports for this run: \e]8;;https:/kanderson250/newrelic-java-agent/reports/${{ github.run_id }}/${{ matrix.java-version }}/index.html\aClick Here\e]8;;\a"
 
 
