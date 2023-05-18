@@ -40,6 +40,9 @@ def writeHTMLFileStructure(rootPath, destinationPath):
     <head>
     <title>File Structure</title>
     <style>
+        .file {{
+        margin-left: 5%
+        }}
         li > ul{{
         display: none;
         }}
