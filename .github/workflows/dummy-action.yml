@@ -60,7 +60,9 @@ jobs:
           path: gh-pages/html_test
       
       - name: add an index file
-        run: touch index.html
+        run: |
+          cd gh-pages/html_test
+          touch index.html
         
       - name: Setup node
         uses: actions/setup-node@v3
@@ -70,7 +72,7 @@ jobs:
       - name: Run the js script on the html folder
         run: |
           cd gh-pages
-          node reports/utils/readContents.js html_test     
+          node reports/utils/readContents.js html_test html_test/index.html   
           
       - name: Commit and push test reports to gh-pages
         run: |
