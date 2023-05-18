@@ -70,7 +70,7 @@ jobs:
       - name: Run the js script on the html folder
         run: |
           cd gh-pages
-          node reports/utils/readDir.js html_test     
+          node reports/utils/readContents.js html_test     
           
       - name: Commit and push test reports to gh-pages
         run: |
