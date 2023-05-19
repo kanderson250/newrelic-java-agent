@@ -45,6 +45,9 @@ def writeHTMLFileStructure(rootPath):
     <head>
     <title>{dirName}</title>
     <style>
+        body {{
+        font-family: sans-serif;
+        }}
         li > ul{{
         display: none;
         }}
