@@ -173,8 +173,13 @@ jobs:
           cd gh-pages
           git pull
           git add -f reports/*
-          git commit -m 'Update test reports for ${{ github.run_id}} on Java version ${{ matrix.java-version }}'
+          git commit -m "Update test reports for ${{ github.run_id}} on Java version ${{ matrix.java-version }}"
           git push
-          echo 'View reports for this run: https://kanderson250.github.io/newrelic-java-agent/reports/${ github.run_id }/${ matrix.java-version }/index.html'
+          
+      - name: Output reports URL
+        if: ${{ failure() }}
+        run: |
+          echo "View reports for this run: https://kanderson250.github.io/newrelic-java-agent/reports/${{ github.run_id }}/${{ matrix.java-version }}/index.html"
+        
 
 
