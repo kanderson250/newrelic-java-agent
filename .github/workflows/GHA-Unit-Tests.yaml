@@ -148,24 +148,29 @@ jobs:
       - name: Move into gh-pages
         if: ${{ failure() }}
         run: |
-          mkdir -p gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }}
+          mkdir -p gh-pages/reports/${{ github.ref }}/${{ github.run_id }}/${{ matrix.java-version }}
       
       - name: Download test reports folder
         if: ${{ failure() }}
         uses: actions/download-artifact@v3
         with: 
           name: unit-tests-results-java-${{ matrix.java-version }}
-          path: gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }}
+          path: gh-pages/reports/${{ github.ref }}/${{ github.run_id }}/${{ matrix.java-version }}
           
       - name: Set up Python
         if: ${{ failure() }}
         uses: actions/setup-python@v3
-      
-      - name: Generate Index Page
+        
+      - name: Generate branch and run index pages
         if: ${{ failure() }}
         run: |
-          cd gh-pages/reports/${{ github.run_id }}/${{ matrix.java-version }}
-          python ../../../ghpages_utils/generateFolderStructureHTML.py . index.html
+          python gh-pages/ghpages_utils/generateIndexFile.py gh-pages/reports/${{ github.ref }}
+          python gh-pages/ghpages_utils/generateIndexFile.py gh-pages/reports/${{ github.ref }}/${{ github.run_id }}
+      
+      - name: Generate Test Reports Index Page
+        if: ${{ failure() }}
+        run: |
+          python gh-pages/ghpages_utils/generateFolderStructureHTML.py gh-pages/reports/${{ github.ref }}/${{ github.run_id }}/${{ matrix.java-version }}
           
       - name: Commit and push test reports to gh-pages
         if: ${{ failure() }}
@@ -179,7 +184,7 @@ jobs:
       - name: Output reports URL
         if: ${{ failure() }}
         run: |
-          echo "View reports for this run: https://kanderson250.github.io/newrelic-java-agent/reports/${{ github.run_id }}/${{ matrix.java-version }}/index.html"
+          echo "View reports for this run: https://kanderson250.github.io/newrelic-java-agent/reports/${{ github.ref }}/${{ github.run_id }}/${{ matrix.java-version }}/index.html"
         
 
 
