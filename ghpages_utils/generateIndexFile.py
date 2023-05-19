@@ -21,6 +21,11 @@ def writeHTMLIndexFileStructure(rootPath):
     <html>
     <head>
     <title>{dirName}</title>
+    <style>
+        body {{
+        font-family: sans-serif;
+        }}
+    </style>
     </head>
     <body>
     <h1>{dirName}</h1>
