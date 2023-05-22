@@ -1,5 +1,8 @@
 name: Test Reusable GH Pages Actions
 
+on:
+  workflow_dispatch:
+
 jobs:
   test-action:
     name: Copy something from one branch to gh-pages
