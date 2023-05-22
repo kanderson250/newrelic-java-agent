@@ -37,6 +37,8 @@ jobs:
       - name: Commit and push to GH Pages
         shell: bash
         run: |
+          cd gh-pages
+          git st
           git pull
           git add -f . 
           git commit -m "Downloading build artifact ${{ inputs.artifactName }} to ${{ inputs.destinationPath }}"
