@@ -134,6 +134,7 @@ jobs:
   publishReports:
     name: Publish reports for Java ${{ matrix.java-version }} to GH-Pages
     needs: unit-test
+    if: ${{ always() }}
     strategy:
       matrix:
         java-version: [8, 11, 17, 19]
@@ -145,6 +146,7 @@ jobs:
   generateIndexTrees:
     name: Create test reports landing page for Java ${{ matrix.java-version }}
     needs: publishReports
+    if: ${{ always() }}
     strategy:
       matrix:
         java-version: [ 8, 11, 17, 19 ]
@@ -154,12 +156,14 @@ jobs:
 
   indexBranch:
     needs: publishReports
+    if: ${{ always() }}
     uses: ./.github/workflows/Reusable-Generate-Index-Page.yml
     with:
       path: reports/${{ github.ref }}
 
   indexRun:
     needs: publishReports
+    if: ${{ always() }}
     uses: ./.github/workflows/Reusable-Generate-Index-Page.yml
     with:
       path: reports/${{ github.ref }}/${{ github.run_id }}
