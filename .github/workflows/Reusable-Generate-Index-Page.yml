@@ -9,6 +9,7 @@ on:
     inputs:
       path:
         description: The path to a folder in gh-pages. This path should omit the gh-pages branch prefix.
+        type: string
         required: true
 
 jobs:

@@ -5,9 +5,11 @@ on:
     inputs:
       artifactName:
         description: The artifact to publish to gh-pages. This should be the name of a build artifact from a previous step in the workflow, not a filepath.
+        type: string
         required: true
       destinationPath:
         description: The path to the directory where the artifact should be downloaded. Please omit the gh-pages prefix from the path.
+        type: string
         required: true
 
 jobs:
