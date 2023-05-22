@@ -1,6 +1,8 @@
 name: Test Reusable GH Pages Actions
 
 on:
+  push:
+    branch: [ unittest-publish-to-ghpages ]
   workflow_dispatch:
 
 jobs:
