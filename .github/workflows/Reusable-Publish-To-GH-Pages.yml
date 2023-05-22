@@ -38,6 +38,6 @@ jobs:
         shell: bash
         run: |
           git pull
-          git add -f gh-pages/${{ inputs.destinationPath }}/*
+          git add -f . 
           git commit -m "Downloading build artifact ${{ inputs.artifactName }} to ${{ inputs.destinationPath }}"
           git push

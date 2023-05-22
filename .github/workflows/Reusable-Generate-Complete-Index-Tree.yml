@@ -40,6 +40,6 @@ jobs:
       - name: Commit and push to gh-pages
         run: |
           git pull
-          git add -f gh-pages/${{ inputs.path }}/*
+          git add -f .
           git commit -m "Generate complete index file structure for directory ${{ inputs.path }}"
           git push
