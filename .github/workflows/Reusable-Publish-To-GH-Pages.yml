@@ -1,7 +1,7 @@
 name: Publish to GH Pages
 
 on:
-  workflow-call:
+  workflow_call:
     inputs:
       artifactName:
         description: The artifact to publish to gh-pages. This should be the name of a build artifact from a previous step in the workflow, not a filepath.
