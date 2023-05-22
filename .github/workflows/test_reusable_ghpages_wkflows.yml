@@ -40,7 +40,7 @@ jobs:
   publish:
     name: Publish artifacts to GH Pages
     needs: test-action
-    uses: ./.github/workflows/Reusable-Publish-To-GH-Pages.yml
+    uses: ./.github/workflows/Reusable-Publish-To-GH-Pages.yml@unittests-publish-to-ghpages
     with:
       artifactName: html_downloads_artifact
       destinationPath: tempDirectory
@@ -48,7 +48,7 @@ jobs:
   indexFiles:
     name: Generate Index File
     needs: publish
-    uses: ./.github/workflows/Reusable-Generate-Index-Page.yml
+    uses: ./.github/workflows/Reusable-Generate-Index-Page.yml@unittests-publish-to-ghpages
     with:
       path: tempDirectory
 
