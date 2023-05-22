@@ -36,7 +36,7 @@ jobs:
         run: python gh-pages/ghpages_utils/generateIndexFile.py gh-pages/${{ inputs.path }}
 
       - name: Commit and push to GH Pages
-        runs: |
+        run: |
           git pull
           git add -f gh-pages/${{ destinationPath }}/*
           git commit -m "Generate index page for directory ${{ inputs.path }}"
