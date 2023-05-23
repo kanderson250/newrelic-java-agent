@@ -1,58 +1,35 @@
 import os
 import argparse
 
-def generate_folder_structure(path):
-    html = ""
-    html += f'<ul>'
+def writeIndexFile(path):
+    #contents_list = generate_folder_structure(rootPath)
+    dirName = os.path.basename(path)
+
+    #generate html contents
+    contents_list = "<ul>"
     for item in os.listdir(path):
-        html += f'<li class="file"><a href="{item}">{item}</a></li>'
-    html += f'</ul>'
-    return html
+        contents_list += f'<li class="file"><a href="{item}">{item}</a></li>'
+    contents_list += "</ul>"
 
-def writeHTMLIndexFileStructure(rootPath):
-
-    # Generate the folder-by-folder dropdown HTML structure
-    html_structure = generate_folder_structure(rootPath)
-    dirName = os.path.basename(rootPath)
-
-    # Create the final HTML document with the generated structure
-    html_document = f'''
+    html_string = f'''
     <!DOCTYPE html>
     <html>
     <head>
     <title>{dirName}</title>
-    <style>
-        body {{
-        font-family: sans-serif;
-        }}
-    </style>
     </head>
     <body>
     <h1>{dirName}</h1>
-
-    {html_structure}
+    {contents_list}
     </body>
     </html>
     '''
-
-    indexPath = os.path.join(rootPath, 'index.html')
-    # Save the HTML document to a file
+    indexPath = os.path.join(path, 'index.html')
     with open(indexPath, 'w') as file:
-        file.write(html_document)
+        file.write(html_string)
 
 
 if __name__ == '__main__':
-    # Create an argument parser object
     parser = argparse.ArgumentParser(description='Description of your script')
-
-    # Add command-line arguments
-    parser.add_argument('arg1', help='The root path of a folder to index.')
-
-    # Parse the command-line arguments
+    parser.add_argument('root', help='The root path of a folder to index.')
     args = parser.parse_args()
-
-    # Access the argument values
-    arg1_value = args.arg1
-
-    # Call the main function with the argument values
-    writeHTMLIndexFileStructure(arg1_value)
+    writeIndexFile(args.root)

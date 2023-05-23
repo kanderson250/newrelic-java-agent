@@ -2,7 +2,11 @@ import os
 import argparse
 from bs4 import BeautifulSoup
 
-def getFailures(root_path):
+# Check the test report index.html files within a directory for failures.
+# The test report index files are expected at ./SUBFOLDER/build/reports/tests/test/index.html. All
+# other index files will be ignored.
+
+def writeFailuresIndexPage(root_path):
     failCount = 0
     failingTests = ""
     passingTests = ""
@@ -53,17 +57,7 @@ def getFailures(root_path):
     print(f'Test reports published to {root_path} with {failCount} failing suites.')
 
 if __name__ == '__main__':
-    # Create an argument parser object
     parser = argparse.ArgumentParser(description='Description of your script')
-
-    # Add command-line arguments
-    parser.add_argument('arg1', help='The root path of a folder to get all html files containing failure messages')
-
-    # Parse the command-line arguments
+    parser.add_argument('root', help='The root path of a folder containing test reports.')
     args = parser.parse_args()
-
-    # Access the argument values
-    arg1_value = args.arg1
-
-    # Call the main function with the argument values
-    getFailures(arg1_value)
+    writeFailuresIndexPage(args.root)
