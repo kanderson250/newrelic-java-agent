@@ -2,28 +2,55 @@ import os
 import argparse
 from bs4 import BeautifulSoup
 
-def generate_index_file(root_path):
+def getFailures(root_path):
+    failCount = 0
+    failingTests = ""
+    passingTests = ""
+
+    #check results for each test suite
+    for folder in os.listdir(root_path):
+        summary_path = os.path.join(root_path, folder, 'build', 'reports', 'tests', 'test', 'index.html')
+        if os.path.exists(summary_path):
+            relative_path = os.path.relpath(summary_path, root_path)
+            test_item = f"<li><a href='{relative_path}'>{relative_path}</a></li>"
+            with open(summary_path, 'r') as html_file:
+                soup = BeautifulSoup(html_file, 'html.parser')
+                failures = soup.find(id='failures')
+                if failures and '0' not in failures.get_text().strip():
+                    failCount += 1
+                    failingTests += test_item
+                else:
+                    passingTests += test_item
+
+    html_string = f'''
+      <!DOCTYPE html>
+      <html>
+      <head>
+      <title>Unit Test Results</title>
+      <style>
+        #failing li {{
+            color: red
+        }}
+        #passing li {{
+            color: green
+        }}
+      </style>
+      </head>
+      <body>
+      <h1>Unit Test Results</h1>
+      <div id = 'failing'><h2>Failing Test Suites</h2>
+          <ul> {failingTests} </ul>
+      </div>
+      <div id='passing'> <h2>Passing Test Suites</h2>
+          <ul> {passingTests} </ul>
+      </div>
+      </body>
+      </html>
+      '''
     index_path = os.path.join(root_path, 'index.html')
-
     with open(index_path, 'w') as index_file:
-        index_file.write("<html><body><h1>Test Reports</h1><ul>")
-
-        for root, _, files in os.walk(root_path):
-            for filename in files:
-                if filename.endswith('.html'):
-                    file_path = os.path.join(root, filename)
-                    relative_path = os.path.relpath(file_path, root_path)
-
-                    with open(file_path, 'r') as html_file:
-                        soup = BeautifulSoup(html_file, 'html.parser')
-                        failures = soup.find(id='failures')
-
-                        if failures and '0' not in failures.get_text().strip():
-                            index_file.write(f"<li><a href='{relative_path}'>{relative_path}</a></li>")
-
-        index_file.write("</ul></body></html>")
-
-# Usage example
+        index_file.write(html_string)
+    print(f'Test reports published to {root_path} with {failCount} failing suites.')
 
 if __name__ == '__main__':
     # Create an argument parser object
@@ -39,4 +66,4 @@ if __name__ == '__main__':
     arg1_value = args.arg1
 
     # Call the main function with the argument values
-    generate_index_file(arg1_value)
+    getFailures(arg1_value)
