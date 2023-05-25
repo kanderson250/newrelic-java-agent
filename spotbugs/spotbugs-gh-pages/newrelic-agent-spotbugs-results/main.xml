@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1684883877727" analysisTimestamp="1684883877727" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1684919275276" analysisTimestamp="1684919275276" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/bootstrap/BootstrapLoader.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/bootstrap/EmbeddedJarFilesImpl.class</Jar>
@@ -1757,7 +1757,7 @@ the recommended <code>hashCode</code> implementation to use is:</p>
     <Description>Comparing incompatible types for equality</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 23 May 2023 23:17:57 +0000" total_classes="0" referenced_classes="0" total_bugs="11" total_size="0" num_packages="4" java_version="1.8.0_362" vm_version="25.362-b09" cpu_seconds="45.14" clock_seconds="35.41" peak_mbytes="536.81" alloc_mbytes="910.50" gc_seconds="2.83" priority_1="11">
+  <FindBugsSummary timestamp="Wed, 24 May 2023 09:07:55 +0000" total_classes="0" referenced_classes="0" total_bugs="11" total_size="0" num_packages="4" java_version="1.8.0_362" vm_version="25.362-b09" cpu_seconds="45.80" clock_seconds="36.92" peak_mbytes="542.69" alloc_mbytes="910.50" gc_seconds="2.85" priority_1="11">
     <FileStats path="com/newrelic/agent/config/AgentConfigImpl.java" bugCount="1" size="0" bugHash="d165eb063c3e06cc80c7158c340584d0"/>
     <FileStats path="com/newrelic/agent/config/AttributesConfigImpl.java" bugCount="3" size="0" bugHash="ebaefdf16d096b966325c4699998723a"/>
     <FileStats path="com/newrelic/agent/instrumentation/builtin/AgentClassLoaderBaseInstrumentation.java" bugCount="1" size="0" bugHash="982862bbea765ab5f7519cd9a6025e0a"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1684883887548" analysisTimestamp="1684883887548" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1684919285366" analysisTimestamp="1684919285366" release="">
   <Project projectName="newrelic-weaver (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/MethodProcessors$6$1.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/ClassMatch$CallOriginalInitState.class</Jar>
@@ -227,7 +227,7 @@
     <Description>Bad use of return value from method</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 23 May 2023 23:18:07 +0000" total_classes="0" referenced_classes="0" total_bugs="2" total_size="0" num_packages="1" java_version="1.8.0_362" vm_version="25.362-b09" cpu_seconds="14.95" clock_seconds="15.14" peak_mbytes="422.64" alloc_mbytes="910.50" gc_seconds="0.93" priority_1="2">
+  <FindBugsSummary timestamp="Wed, 24 May 2023 09:08:05 +0000" total_classes="0" referenced_classes="0" total_bugs="2" total_size="0" num_packages="1" java_version="1.8.0_362" vm_version="25.362-b09" cpu_seconds="16.11" clock_seconds="15.93" peak_mbytes="427.10" alloc_mbytes="910.50" gc_seconds="0.92" priority_1="2">
     <FileStats path="com/newrelic/weave/utils/ClassCache.java" bugCount="2" size="0" bugHash="c4e68725ae3fa75020f6095e6d174311"/>
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
