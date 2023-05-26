@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Run some shell commands
         run: | 
-          echo $(date -u -v -5d +%s)
+          echo $(date -u -d "5 days ago" +%s)
