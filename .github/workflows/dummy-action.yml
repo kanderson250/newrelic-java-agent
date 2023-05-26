@@ -30,6 +30,7 @@ jobs:
       - name: Delete old folders
         run: |
           directories=($(find . -name date.txt -exec dirname {} \;))
+          echo $directories
           for directory in $directories; do
             echo $directory
             date_in_file_utc=$(cat "$directory/date.txt")
