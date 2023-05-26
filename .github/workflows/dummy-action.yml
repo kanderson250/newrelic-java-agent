@@ -27,6 +27,7 @@ jobs:
           
       - name: Delete old folders
         run: |
+          find . -name date.txt -exec dirname {} \;
           directories=($(find . -name date.txt -exec dirname {} \;))
           echo $directories
           for directory in $directories; do
