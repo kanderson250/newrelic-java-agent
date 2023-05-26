@@ -130,7 +130,9 @@ jobs:
 
       - name: Copy build reports
         if: ${{ failure() }}
-        run: cp **/build/reports/tests/* gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
+        run: |
+          mkdir -p gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
+          cp **/build/reports/tests/* gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
 
       - name: Set up python for scripts
         if: ${{ failure() }}
