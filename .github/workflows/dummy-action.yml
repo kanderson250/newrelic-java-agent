@@ -8,9 +8,27 @@ on:
 
 jobs:
   dummy-action:
-    name: Copy something from one branch to gh-pages
+    name: Test shell commands
     runs-on: ubuntu-latest
     steps:
-      - name: Run some shell commands
-        run: | 
-          echo $(date -u -d "5 days ago" +%s)
+      - name: Make a bunch of random folders with date.txt files
+        run: |
+          echo $(date -u +%s) > folder1/date.txt
+          echo $(date -u +%s) > folder1/new/date.txt
+          echo $(date -u -d "5 days ago" +%s) > folder1/old/date.txt
+          echo $(date -u -d "10 days ago" +%s) > folder2/date.txt
+          echo $(date -u -d "10 days ago" +%s) > folder2/super_old/date.txt
+          ls -R
+          
+      - name: Delete old folders
+        run: |
+          directories=($(find . -name date.txt -exec dirname {}))
+          for directory in $directories; do
+            date_in_file_utc=$(cat "$directory/date.txt")
+            five_days_ago_utc=$(date -u -d "5 days ago" +%s)
+            if ((date_in_file_utc < five_days_ago_utc)); then
+              rm -rf $directory
+            fi
+          done
+          ls -R
+
