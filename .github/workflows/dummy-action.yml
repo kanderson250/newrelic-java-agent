@@ -20,7 +20,7 @@ jobs:
           mkdir folder3
           mkdir folder3/unrelated
           echo $(date -u +%s) > folder1/date.txt
-          echo $(date -u -d "5 days ago" +%s) > folder1/old/date.txt
+          echo $(date -u -d "6 days ago" +%s) > folder1/old/date.txt
           echo $(date -u -d "10 days ago" +%s) > folder2/date.txt
           echo $(date -u -d "10 days ago" +%s) > folder2/super_old/date.txt
           ls -R
