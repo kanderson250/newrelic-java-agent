@@ -5,73 +5,12 @@ on:
   # https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
   push: 
     branches: [dummy-branch]
-  workflow_dispatch:
-    inputs:
-      BRANCH:
-        description: "Specify branch (main is default)"
-        default: 'main'
 
 jobs:
   dummy-action:
     name: Copy something from one branch to gh-pages
     runs-on: ubuntu-latest
     steps:
-      - name: Make downloads directory
+      - name: Run some shell commands
         run: | 
-          mkdir html_downloads
-          cd html_downloads
-          mkdir first_directory
-          mkdir second_directory
-          mkdir third_directory
-          cd third_directory
-          mkdir fourth_directory
-          
-      - name: Generate html files
-        run: |
-          cd html_downloads
-          echo 'This is the first file' > first_directory/alpha.html
-          echo 'This is also a first directory file'> first_directory/another.html
-          echo 'This is the modified second file' > second_directory/beta.html
-          echo 'And this is the last file' > third_directory/fourth_directory/omega.html
-          
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v3
-        with: 
-          name: html_downloads_artifact
-          path: html_downloads
-      
-      - name: Checkout GhPages branch
-        uses: actions/checkout@v3
-        with:
-            ref: 'gh-pages'
-            path: 'gh-pages'
-        
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@users.noreply.github.com"
-      
-      - name: Move into gh-pages and make a test directory
-        run: |
-          cd gh-pages
-          mkdir -p test_folder_structure
-      
-      - name: Download html folder
-        uses: actions/download-artifact@v3
-        with: 
-          name: html_downloads_artifact
-          path: gh-pages/test_folder_structure
-     
-     # Prepare to run the indexing script
-      - name: Set up Python
-        uses: actions/setup-python@v3
-        
-      - name: Run indexing script
-        run: python gh-pages/ghpages_utils/generateIndexFile.py gh-pages/test_folder_structure
-          
-      - name: Commit and push test reports to gh-pages
-        run: |
-          cd gh-pages
-          git add -f test_folder_structure/*
-          git commit -m "Update html contents in test_folder_structure"
-          git push
+          echo $(date -u -v -5d +%s)
