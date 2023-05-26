@@ -29,7 +29,7 @@ jobs:
           
       - name: Delete old folders
         run: |
-          directories=($(find . -name date.txt -exec dirname {}))
+          directories=($(find . -name date.txt -exec dirname {} \;))
           for directory in $directories; do
             date_in_file_utc=$(cat "$directory/date.txt")
             five_days_ago_utc=$(date -u -d "5 days ago" +%s)
