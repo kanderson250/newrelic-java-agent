@@ -134,7 +134,7 @@ jobs:
         if: ${{ failure() }}
         run: |
           mkdir -p gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
-          cp **/build/reports/tests/* gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
+          cp -r **/build/reports/tests/* gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
 
       - name: Set up python for scripts
         if: ${{ failure() }}
@@ -143,6 +143,7 @@ jobs:
       - name: Generate landing page for test results
         if: ${{ failure() }}
         run: |
+          pip install beautifulsoup4
           python gh-pages/ghpages_utils/getFailures.py gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
 
       - name: Commit and push test reports to gh-pages
