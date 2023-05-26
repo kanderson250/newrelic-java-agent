@@ -14,14 +14,12 @@ jobs:
       - name: Make a bunch of random folders with date.txt files
         run: |
           mkdir folder1
-          mkdir folder1/new
           mkdir folder1/old
           mkdir folder2
           mkdir folder2/super_old
           mkdir folder3
           mkdir folder3/unrelated
           echo $(date -u +%s) > folder1/date.txt
-          echo $(date -u +%s) > folder1/new/date.txt
           echo $(date -u -d "5 days ago" +%s) > folder1/old/date.txt
           echo $(date -u -d "10 days ago" +%s) > folder2/date.txt
           echo $(date -u -d "10 days ago" +%s) > folder2/super_old/date.txt
