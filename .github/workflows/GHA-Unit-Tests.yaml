@@ -118,12 +118,14 @@ jobs:
           ./gradlew --console=plain --parallel test -x :functional_test:test -x :newrelic-scala-api:test -x :newrelic-scala-cats-api:test -x :newrelic-cats-effect3-api:test -x :newrelic-scala-monix-api:test -x :newrelic-scala-zio-api:test -Ptest${{ matrix.java-version }} -PnoInstrumentation --continue
 
       - name: Checkout gh-pages
+        if: ${{ failure() }}
         uses: actions/checkout@v3
         with:
           ref: 'gh-pages'
           path: 'gh-pages'
 
       - name: Configure Git
+        if: ${{ failure() }}
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@users.noreply.github.com"
