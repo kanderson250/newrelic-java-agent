@@ -143,7 +143,7 @@ jobs:
       - name: Generate landing page for test results
         if: ${{ failure() }}
         run: |
-          python gh-pages/ghpages_utils/getFailures.py gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-tests-results-java-${{ matrix.java-version }}
+          python gh-pages/ghpages_utils/getFailures.py gh-pages/reports/${{ inputs.BRANCH }}/${{ github.run_id }}/unit-test-results-java-${{ matrix.java-version }}
 
       - name: Commit and push test reports to gh-pages
         if: ${{ failure() }}
