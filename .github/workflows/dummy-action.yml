@@ -34,7 +34,10 @@ jobs:
             date_in_file_utc=$(cat "$directory/date.txt")
             five_days_ago_utc=$(date -u -d "5 days ago" +%s)
             if ((date_in_file_utc < five_days_ago_utc)); then
+              echo "Directory $directory is old, removing"
               rm -rf $directory
+            else
+              echo "Directory $directory is young, keeping"
             fi
           done
           ls -R
