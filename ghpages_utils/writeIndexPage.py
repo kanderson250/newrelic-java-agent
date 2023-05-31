@@ -1,7 +1,7 @@
 import os
 import argparse
 
-def writeIndexFile(path):
+def writeIndexPage(path):
     #contents_list = generate_folder_structure(rootPath)
     dirName = os.path.basename(path)
 
@@ -32,4 +32,4 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Description of your script')
     parser.add_argument('root', help='The root path of a folder to index.')
     args = parser.parse_args()
-    writeIndexFile(args.root)
+    writeIndexPage(args.root)

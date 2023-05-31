@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 # The test report index files are expected at ./SUBFOLDER/build/reports/tests/test/index.html. All
 # other index files will be ignored.
 
-def writeFailuresIndexPage(root_path):
+def writeTestsFailuresPage(root_path):
     failCount = 0
     failingTests = ""
     passingTests = ""
@@ -60,4 +60,4 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Description of your script')
     parser.add_argument('root', help='The root path of a folder containing test reports.')
     args = parser.parse_args()
-    writeFailuresIndexPage(args.root)
+    writeTestsFailuresPage(args.root)
