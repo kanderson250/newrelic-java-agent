@@ -1,9 +1,0 @@
-plugins {
-    id "java-library"
-}
-
-dependencies {
-    api 'com.googlecode.json-simple:json-simple:1.1'
-    api(project(":newrelic-api"))
-    implementation(project(":agent-model"))
-}

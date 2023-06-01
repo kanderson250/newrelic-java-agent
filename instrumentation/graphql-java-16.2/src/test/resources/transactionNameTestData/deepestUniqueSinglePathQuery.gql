@@ -1,7 +1,0 @@
-query {
-    libraries {
-        booksInStock {
-            title
-        }
-    }
-}

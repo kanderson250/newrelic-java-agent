@@ -1,3 +1,0 @@
-common: &default_settings
-  scala_futures_as_segments:
-    enabled: true

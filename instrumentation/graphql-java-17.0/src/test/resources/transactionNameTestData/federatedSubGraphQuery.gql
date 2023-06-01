@@ -1,7 +1,0 @@
-query {
-    libraries {
-        branch
-        __typename
-        id
-    }
-}

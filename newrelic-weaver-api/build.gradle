@@ -1,5 +1,0 @@
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'New Relic Weaver API', 'Implementation-Version': project.version
-    }
-}

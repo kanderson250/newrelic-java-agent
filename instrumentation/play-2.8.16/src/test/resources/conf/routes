@@ -1,4 +1,0 @@
-GET     /hello          com.nr.agent.instrumentation.play2816.SimpleJavaController.hello
-GET     /index          com.nr.agent.instrumentation.play2816.SimpleJavaController.index
-GET     /simple         com.nr.agent.instrumentation.play2816.SimpleJavaController.simple
-GET     /scalaHello     com.nr.agent.instrumentation.play2816.SimpleScalaController.scalaHello
