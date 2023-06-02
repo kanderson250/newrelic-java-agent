@@ -85,7 +85,7 @@ jobs:
         env:
           default_branch: 'main'
         run: |
-          echo "BRANCH_NAME=${{ inputs.BRANCH_NAME ||  env.default_branch }}" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${{ github.env.inputs.BRANCH_NAME ||  env.default_branch }}" >> $GITHUB_ENV
 
       - name: Checkout GhPages branch
         uses: actions/checkout@v3
@@ -107,31 +107,31 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: newrelic-agent-spotbugs-results
-          path: gh-pages/spotbugs/$BRANCH_NAME/newrelic-agent-spotbugs-results
+          path: gh-pages/spotbugs/${{ env.BRANCH_NAME }}/newrelic-agent-spotbugs-results
 
       - name: Download spotbugs reports 2
         uses: actions/download-artifact@v3
         with:
           name: newrelic-weaver-spotbugs-results
-          path: gh-pages/spotbugs/$BRANCH_NAME/newrelic-weaver-spotbugs-results
+          path: gh-pages/spotbugs/${{ env.BRANCH_NAME }}/newrelic-weaver-spotbugs-results
 
       - name: Download spotbugs reports 3
         uses: actions/download-artifact@v3
         with:
           name: agent-bridge-spotbugs-results
-          path: gh-pages/spotbugs/$BRANCH_NAME/agent-bridge-spotbugs-results
+          path: gh-pages/spotbugs/${{ env.BRANCH_NAME }}/agent-bridge-spotbugs-results
 
       - name: Download spotbugs reports 4
         uses: actions/download-artifact@v3
         with:
           name: agent-model-spotbugs-results
-          path: gh-pages/spotbugs/$BRANCH_NAME/agent-model-spotbugs-results
+          path: gh-pages/spotbugs/${{ env.BRANCH_NAME }}/agent-model-spotbugs-results
 
       - name: Download spotbugs reports 5
         uses: actions/download-artifact@v3
         with:
           name: newrelic-api-spotbugs-results
-          path: gh-pages/spotbugs/$BRANCH_NAME/newrelic-api-spotbugs-results
+          path: gh-pages/spotbugs/${{ env.BRANCH_NAME }}/newrelic-api-spotbugs-results
 
       # By default, GH-Pages only recognizes index.html files as landing pages.
       # This can be reconfigured at the repository level, but not at the directory level.
