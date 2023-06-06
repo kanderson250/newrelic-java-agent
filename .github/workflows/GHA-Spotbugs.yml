@@ -4,6 +4,8 @@
 name: Execute Spotbugs
 
 on:
+  push:
+    branch: ['unittests-spotbugs-ghpages']
   workflow_dispatch:
     inputs:
       agent-ref:
