@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1690624242895" analysisTimestamp="1690624242895" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1690710507319" analysisTimestamp="1690710507319" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/TracerService$NoOpTracerService.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/Transaction$3.class</Jar>
@@ -1379,7 +1379,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sat, 29 Jul 2023 09:50:42 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_372" vm_version="25.372-b07" cpu_seconds="55.12" clock_seconds="47.18" peak_mbytes="522.35" alloc_mbytes="910.50" gc_seconds="4.42">
+  <FindBugsSummary timestamp="Sun, 30 Jul 2023 09:48:27 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_372" vm_version="25.372-b07" cpu_seconds="54.02" clock_seconds="46.01" peak_mbytes="504.02" alloc_mbytes="910.50" gc_seconds="3.78">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
