@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1690710494784" analysisTimestamp="1690710494784" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1690797653877" analysisTimestamp="1690797653877" release="">
   <Project projectName="agent-model (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/CountedDuration.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/SpanError.class</Jar>
@@ -27,7 +27,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 30 Jul 2023 09:48:14 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_372" vm_version="25.372-b07" cpu_seconds="6.58" clock_seconds="7.02" peak_mbytes="192.04" alloc_mbytes="910.50" gc_seconds="0.50">
+  <FindBugsSummary timestamp="Mon, 31 Jul 2023 10:00:53 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_372" vm_version="25.372-b07" cpu_seconds="7.22" clock_seconds="6.89" peak_mbytes="189.23" alloc_mbytes="910.50" gc_seconds="0.37">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
