@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1697709512632" analysisTimestamp="1697709512632" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1697795983058" analysisTimestamp="1697795983058" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/application/HigherPriorityApplicationNamingPolicy.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/application/ApplicationNamingPolicy.class</Jar>
@@ -1379,7 +1379,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Thu, 19 Oct 2023 09:58:32 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_382" vm_version="25.382-b05" cpu_seconds="71.86" clock_seconds="60.37" peak_mbytes="520.49" alloc_mbytes="910.50" gc_seconds="3.75">
+  <FindBugsSummary timestamp="Fri, 20 Oct 2023 09:59:43 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_382" vm_version="25.382-b05" cpu_seconds="65.34" clock_seconds="55.47" peak_mbytes="520.64" alloc_mbytes="910.50" gc_seconds="3.35">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
