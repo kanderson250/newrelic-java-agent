@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1703669294771" analysisTimestamp="1703669294771" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1703755934030" analysisTimestamp="1703755934030" release="">
   <Project projectName="newrelic-weaver (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/ClassWeave$2.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/utils/ClassInformation$ClassInformationExtractor$2$1.class</Jar>
@@ -150,7 +150,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Wed, 27 Dec 2023 09:28:14 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_392" vm_version="25.392-b08" cpu_seconds="25.89" clock_seconds="15.92" peak_mbytes="425.28" alloc_mbytes="910.50" gc_seconds="0.59">
+  <FindBugsSummary timestamp="Thu, 28 Dec 2023 09:32:14 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_392" vm_version="25.392-b08" cpu_seconds="25.60" clock_seconds="15.66" peak_mbytes="407.48" alloc_mbytes="910.50" gc_seconds="0.59">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
