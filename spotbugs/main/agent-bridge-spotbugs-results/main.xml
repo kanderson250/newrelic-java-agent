@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1710839743536" analysisTimestamp="1710839743536" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1710926149393" analysisTimestamp="1710926149393" release="">
   <Project projectName="agent-bridge (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/bridge/ExtensionHolderFactory$NoOpExtensionHolderFactory.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/bridge/NoOpInstrumentation.class</Jar>
@@ -100,7 +100,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 19 Mar 2024 09:15:43 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="10.58" clock_seconds="10.31" peak_mbytes="217.61" alloc_mbytes="910.50" gc_seconds="0.33">
+  <FindBugsSummary timestamp="Wed, 20 Mar 2024 09:15:49 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="11.96" clock_seconds="11.64" peak_mbytes="218.79" alloc_mbytes="910.50" gc_seconds="0.41">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
