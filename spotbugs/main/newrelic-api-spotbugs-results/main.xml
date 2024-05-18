@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1715937509696" analysisTimestamp="1715937509696" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1716023825314" analysisTimestamp="1716023825314" release="">
   <Project projectName="newrelic-api (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/MessageProduceParameters$Builder.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/MessageProduceParameters$DestinationTypeParameter.class</Jar>
@@ -88,7 +88,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Fri, 17 May 2024 09:18:29 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="9.42" clock_seconds="7.49" peak_mbytes="208.64" alloc_mbytes="910.50" gc_seconds="0.22">
+  <FindBugsSummary timestamp="Sat, 18 May 2024 09:17:05 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="9.18" clock_seconds="7.01" peak_mbytes="200.23" alloc_mbytes="910.50" gc_seconds="0.27">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
