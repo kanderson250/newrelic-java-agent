@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1716196956371" analysisTimestamp="1716196956371" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1716283287736" analysisTimestamp="1716283287736" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/api/agent/NewRelicApiImplementation.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/RPMServiceManagerImpl.class</Jar>
@@ -1379,7 +1379,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 20 May 2024 09:22:36 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="67.12" clock_seconds="36.90" peak_mbytes="585.79" alloc_mbytes="910.50" gc_seconds="1.47">
+  <FindBugsSummary timestamp="Tue, 21 May 2024 09:21:27 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="65.41" clock_seconds="25.31" peak_mbytes="537.98" alloc_mbytes="910.50" gc_seconds="1.25">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
