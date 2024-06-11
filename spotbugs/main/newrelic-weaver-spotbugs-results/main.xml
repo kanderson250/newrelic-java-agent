@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1718011216074" analysisTimestamp="1718011216074" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1718097690443" analysisTimestamp="1718097690443" release="">
   <Project projectName="newrelic-weaver (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/MethodCallInlinerAdapter$InlinedMethod.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/GeneratedNewFieldMethod.class</Jar>
@@ -150,7 +150,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 10 Jun 2024 09:20:16 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="26.03" clock_seconds="15.72" peak_mbytes="410.15" alloc_mbytes="910.50" gc_seconds="0.57">
+  <FindBugsSummary timestamp="Tue, 11 Jun 2024 09:21:30 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="26.63" clock_seconds="16.27" peak_mbytes="407.46" alloc_mbytes="910.50" gc_seconds="0.61">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
