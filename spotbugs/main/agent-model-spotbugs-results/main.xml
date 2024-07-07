@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1720259271629" analysisTimestamp="1720259271629" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1720345819471" analysisTimestamp="1720345819471" release="">
   <Project projectName="agent-model (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/SpanEvent$Builder.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/TimeoutCause.class</Jar>
@@ -27,7 +27,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sat, 6 Jul 2024 09:47:51 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="8.58" clock_seconds="9.21" peak_mbytes="160.33" alloc_mbytes="910.50" gc_seconds="0.30">
+  <FindBugsSummary timestamp="Sun, 7 Jul 2024 09:50:19 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_412" vm_version="25.412-b08" cpu_seconds="9.02" clock_seconds="9.13" peak_mbytes="169.95" alloc_mbytes="910.50" gc_seconds="0.35">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
