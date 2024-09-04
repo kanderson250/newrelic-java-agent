@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1725354682223" analysisTimestamp="1725354682223" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1725441098513" analysisTimestamp="1725441098513" release="">
   <Project projectName="agent-model (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/TransactionTiming.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/TimeoutCause.class</Jar>
@@ -27,7 +27,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 3 Sep 2024 09:11:22 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_422" vm_version="25.422-b05" cpu_seconds="8.90" clock_seconds="9.51" peak_mbytes="143.30" alloc_mbytes="910.50" gc_seconds="0.31">
+  <FindBugsSummary timestamp="Wed, 4 Sep 2024 09:11:38 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_422" vm_version="25.422-b05" cpu_seconds="9.10" clock_seconds="9.79" peak_mbytes="172.96" alloc_mbytes="910.50" gc_seconds="0.29">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
