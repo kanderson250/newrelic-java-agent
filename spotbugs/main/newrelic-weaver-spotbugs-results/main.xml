@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1726045915247" analysisTimestamp="1726045915247" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1726132265675" analysisTimestamp="1726132265675" release="">
   <Project projectName="newrelic-weaver (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/MethodCallInlinerAdapter.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/MethodProcessors$8.class</Jar>
@@ -150,7 +150,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Wed, 11 Sep 2024 09:11:55 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_422" vm_version="25.422-b05" cpu_seconds="26.37" clock_seconds="15.08" peak_mbytes="405.26" alloc_mbytes="910.50" gc_seconds="0.52">
+  <FindBugsSummary timestamp="Thu, 12 Sep 2024 09:11:05 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_422" vm_version="25.422-b05" cpu_seconds="26.38" clock_seconds="16.01" peak_mbytes="408.79" alloc_mbytes="910.50" gc_seconds="0.67">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
