@@ -1,7 +1,7 @@
-name: Publish release version explicitly
+name: Test migration workflow
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
     inputs:
       agent-ref:
         description: "Specify agent branch/tag/sha (main is default)"
