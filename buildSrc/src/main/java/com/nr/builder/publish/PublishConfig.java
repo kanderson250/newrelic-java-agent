@@ -53,7 +53,7 @@ public class PublishConfig {
             String signingKey = (String) project.findProperty("signingKey");
             String signingKeyPassword = (String) project.findProperty("signingPassword");
             ext.useInMemoryPgpKeys(signingKeyId, signingKey, signingKeyPassword);
-            ext.setRequired((Callable<Boolean>) () -> project.getGradle().getTaskGraph().hasTask("publish"));
+            ext.setRequired((Callable<Boolean>) () -> project.getGradle().getTaskGraph().hasTask("uploadArchives"));
             ext.sign(publication);
         });
     }
