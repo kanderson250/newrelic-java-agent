@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1751534885299" analysisTimestamp="1751534885299" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1751621216129" analysisTimestamp="1751621216129" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/bootstrap/BootstrapAgent.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/bootstrap/BootstrapLoader.class</Jar>
@@ -1422,7 +1422,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Thu, 3 Jul 2025 09:28:05 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_452" vm_version="25.452-b09" cpu_seconds="75.01" clock_seconds="40.98" peak_mbytes="591.66" alloc_mbytes="910.50" gc_seconds="1.68">
+  <FindBugsSummary timestamp="Fri, 4 Jul 2025 09:26:56 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_452" vm_version="25.452-b09" cpu_seconds="71.92" clock_seconds="38.45" peak_mbytes="594.08" alloc_mbytes="910.50" gc_seconds="1.35">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
