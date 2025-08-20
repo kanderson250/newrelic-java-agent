@@ -9,7 +9,7 @@ CHECK_VERIFY_INSTRUMENTATION="VERIFY_INSTRUMENTATION_SHOULD_CONTAIN_PASSESONLY"
 
 FAILURES=""
 for file in $CHANGED_FILES; do
-    if [[ $file == *.gradle ]]; then
+    if [[ $file == *instrumentation/*.gradle ]]; then
         echo "Checking build file: $file"
         /bin/sh "${INSTALL_DIR}/check-verify.sh" "$file"
         if [ $? -ne 0 ]; then
