@@ -1,0 +1,7 @@
+jar {
+    manifest { attributes 'Implementation-Title': 'wrong-prefix.test-module-two' }
+}
+
+verifyInstrumentation {
+    passesOnly '[foo, bar)'
+}
