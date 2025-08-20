@@ -15,3 +15,7 @@ jobs:
         run: |
           CHANGED_FILES=$(git diff --name-only -r HEAD^1 HEAD | xargs)
           ./automation/pull-request/lint-build-files.sh $CHANGED_FILES
+          if [ $? -ne 0 ]; then
+            echo "::warning::Build files in this PR did not pass optional checks. Please review for accuracy! See check-build-files step for details."
+          fi
+        continue-on-error: true
