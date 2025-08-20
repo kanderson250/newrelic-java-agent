@@ -14,4 +14,4 @@ jobs:
       - name: Check changed files for build errors
         run: |
           CHANGED_FILES=$(git diff --name-only -r HEAD^1 HEAD | xargs)
-          ./automation/lint-build-files.sh $CHANGED_FILES
+          ./automation/pull-request/lint-build-files.sh $CHANGED_FILES
