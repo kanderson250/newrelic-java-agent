@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1755595582297" analysisTimestamp="1755595582297" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1755681992867" analysisTimestamp="1755681992867" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/api/agent/NewRelicApiImplementation.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/ThreadService$AgentThread.class</Jar>
@@ -350,6 +350,7 @@
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/threads/ThreadStateSampler$IncrementCounterWorker.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/threads/ThreadStateSampler$RecordResponseTimeMetricWorker.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/TimedSet.class</Jar>
+    <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/AzureAppService.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/GCP$GcpData.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/PCF$PcfData.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/UtilizationConfig.class</Jar>
@@ -369,6 +370,7 @@
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/UtilizationData.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/AWS.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/CloudData.class</Jar>
+    <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/AzureAppService$AzureAppServiceData.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/Azure.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/utilization/KubernetesData.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/TraceMetadataImpl.class</Jar>
@@ -748,6 +750,7 @@
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/config/ObscuringConfig.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/config/HiddenProperties.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/config/AgentConfigHelper$ExtensionConstructor$2.class</Jar>
+    <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/Agent$2.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/TransactionErrorPriority$1.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/TimedTokenSet$1.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/RPMServiceManagerImpl$1.class</Jar>
@@ -1378,8 +1381,8 @@
     <AuxClasspathEntry>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver-api/build/classes/java/main</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver-scala-api/build/classes/java/main</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver-scala-api/build/classes/scala/main</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.newrelic.agent.java.security/newrelic-security-api/1.6.1/bb6298c410ef6761b9e87ef1aced2a3283a56c9a/newrelic-security-api-1.6.1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.newrelic.agent.java.security/newrelic-security-agent/1.6.1/9911e74ee0067a633ee0961d6dbb8aaeb65dca6a/newrelic-security-agent-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.newrelic.agent.java.security/newrelic-security-api/1.7.0/e18b0438fcfbfc5e361fdb6d83de94a37bf406a/newrelic-security-api-1.7.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.newrelic.agent.java.security/newrelic-security-agent/1.7.0/842c3deb5ed7349f674778f43b12d17b00b070d1/newrelic-security-agent-1.7.0.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.13/e5f6cae5ca7ecaac1ec2827a9e2d65ae2869cada/httpclient-4.5.13.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.13/3f18e1aa31031d89db6f01ba05d501258ce69d2c/commons-codec-1.13.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main</AuxClasspathEntry>
@@ -1395,14 +1398,14 @@
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.7.1/3a53139787663b139de76b627fca0084ab60d32c/asm-tree-9.7.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.7.1/f0ed132a49244b042cd0e15702ab9f2ce3cc8436/asm-9.7.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/net.sourceforge.jregex/jregex/1.2_01/122a715b33ee82f8c591b711f36c809ea5d9db58/jregex-1.2_01.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.18.0/fb14946f0e39748a6571de0635acbe44e7885491/commons-lang3-3.18.0.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.1/779f60f3844dadc3ef597976fcb1e5127b1f343d/log4j-core-2.17.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/5e303a03d04e6788dddfa3655272580ae0fc13bb/json-simple-1.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/30.1.1-jre/87e0fd1df874ea3cbe577702fe6f17068b790fd8/guava-30.1.1-jre.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.github.ben-manes.caffeine/caffeine/2.9.3/b162491f768824d21487551873f9b3b374a7fe19/caffeine-2.9.3.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.33/2cd0a87ff7df953f810c344bdf2fe3340b954c69/snakeyaml-1.33.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/com.konloch/safeyaml/1.34.1/1c3e6b81518e8632cba7bd70a2c598fcb3bb0bce/safeyaml-1.34.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.crac/crac/1.5.0/558290505b200b22bcd2396362877beae37f45b6/crac-1.5.0.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.21/67f57e154437cd9e6e9cf368394b95814836ff88/kotlin-stdlib-jdk8-1.8.21.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/runner/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.13/853b96d3afbb7bf8cc303fe27ee96836a10c1834/httpcore-4.4.13.jar</AuxClasspathEntry>
@@ -1422,7 +1425,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 19 Aug 2025 09:26:22 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_462" vm_version="25.462-b08" cpu_seconds="73.31" clock_seconds="40.22" peak_mbytes="586.24" alloc_mbytes="910.50" gc_seconds="1.70">
+  <FindBugsSummary timestamp="Wed, 20 Aug 2025 09:26:32 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_462" vm_version="25.462-b08" cpu_seconds="75.24" clock_seconds="39.49" peak_mbytes="594.35" alloc_mbytes="910.50" gc_seconds="1.58">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
