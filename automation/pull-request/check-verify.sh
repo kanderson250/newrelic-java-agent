@@ -2,7 +2,7 @@
 
 FILE=$1
 
-if [[ -z "$FILE" ]]; then
+if [ -z "$FILE" ]; then
   echo "Usage: $0 <path-to-gradle-file>"
   exit 1
 fi
@@ -10,7 +10,7 @@ fi
 # Extract verifyInstrumentation block
 block=$(awk '/verifyInstrumentation[[:space:]]*\{/,/\}/' "$FILE")
 
-if [[ -z "$block" ]]; then
+if [ -z "$block" ]; then
   echo "  Error: verifyInstrumentation block not found."
   exit 1
 fi
