@@ -3,7 +3,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  gather-changes:
+  check-build-files:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Check changed files for build errors
+      - name: Check changed files meet build linter requirements
         run: |
           CHANGED_FILES=$(git diff --name-only -r HEAD^1 HEAD | xargs)
           ./automation/pull-request/lint-build-files.sh $CHANGED_FILES
