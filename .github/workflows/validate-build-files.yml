@@ -10,6 +10,12 @@ jobs:
     outputs:
       build-files: ${{ steps.collect-files.outputs.files }}
     steps:
+
+      - name: Check out the repository
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b
+        with:
+          fetch-depth: 2
+
       - name: Collect changed files
         id: collect-files
         run: |
@@ -29,7 +35,6 @@ jobs:
         env:
           file: ${{ matrix.file }}
         run: |
-#          GHA uses set -e to fail the job on any error, but since these checks are optional, we need to override that to raise them as warnings.
           set +e
           if ! ./automation/pull-request/check-verify.sh "$file"; then
             echo "::warning file=$file::(Optional) $file did not contain expected verifyInstrumentation stanza. Please review for accuracy." 
