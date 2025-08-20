@@ -13,6 +13,6 @@ TITLE_LINE=$(grep "'Implementation-Title':\s*'${EXPECTED_TITLE}'" "$FILE")
 
 #If the line is empty, fail
 if [ -z "$TITLE_LINE" ]; then
-  echo "  Error: Expected $EXPECTED_TITLE in 'Implementation-Title' field but did not find it."
+  echo "  Warning: Expected $EXPECTED_TITLE in 'Implementation-Title' field but did not find it."
   exit 1
 fi
