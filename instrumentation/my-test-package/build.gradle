@@ -1,0 +1,6 @@
+
+'Implementation-Title': 'com.newrelic.instrumentation.my-bar-test-package'
+
+verifyInstrumentation {
+    passes "foo"
+}
