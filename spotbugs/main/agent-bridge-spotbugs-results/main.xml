@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1763889929734" analysisTimestamp="1763889929734" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1763976623536" analysisTimestamp="1763976623536" release="">
   <Project projectName="agent-bridge (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/api/agent/weaver/internal/WeavePackageType$1.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/api/agent/weaver/internal/NewClass.class</Jar>
@@ -107,7 +107,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 23 Nov 2025 09:25:29 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_472" vm_version="25.472-b08" cpu_seconds="12.97" clock_seconds="12.40" peak_mbytes="221.73" alloc_mbytes="910.50" gc_seconds="0.51">
+  <FindBugsSummary timestamp="Mon, 24 Nov 2025 09:30:23 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_472" vm_version="25.472-b08" cpu_seconds="13.01" clock_seconds="12.74" peak_mbytes="220.38" alloc_mbytes="910.50" gc_seconds="0.42">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
