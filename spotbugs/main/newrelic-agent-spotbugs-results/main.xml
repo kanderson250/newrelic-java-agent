@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1764581624799" analysisTimestamp="1764581624799" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1764667977450" analysisTimestamp="1764667977450" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/api/agent/NewRelicApiImplementation.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/normalization/NormalizationServiceImpl.class</Jar>
@@ -1425,7 +1425,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 1 Dec 2025 09:33:44 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_472" vm_version="25.472-b08" cpu_seconds="77.81" clock_seconds="40.79" peak_mbytes="583.57" alloc_mbytes="910.50" gc_seconds="1.49">
+  <FindBugsSummary timestamp="Tue, 2 Dec 2025 09:32:57 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_472" vm_version="25.472-b08" cpu_seconds="81.40" clock_seconds="42.96" peak_mbytes="592.45" alloc_mbytes="910.50" gc_seconds="1.60">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
