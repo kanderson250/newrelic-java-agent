@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1768037291934" analysisTimestamp="1768037291934" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1768123653721" analysisTimestamp="1768123653721" release="">
   <Project projectName="newrelic-api (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/SlowQueryWithInputDatastoreParameters.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/Response.class</Jar>
@@ -105,7 +105,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sat, 10 Jan 2026 09:28:11 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_472" vm_version="25.472-b08" cpu_seconds="11.40" clock_seconds="9.06" peak_mbytes="213.47" alloc_mbytes="910.50" gc_seconds="0.40">
+  <FindBugsSummary timestamp="Sun, 11 Jan 2026 09:27:33 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_472" vm_version="25.472-b08" cpu_seconds="11.65" clock_seconds="8.97" peak_mbytes="211.37" alloc_mbytes="910.50" gc_seconds="0.38">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
