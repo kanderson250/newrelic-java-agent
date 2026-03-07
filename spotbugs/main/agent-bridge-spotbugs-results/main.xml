@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1772790240832" analysisTimestamp="1772790240832" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1772876084648" analysisTimestamp="1772876084648" release="">
   <Project projectName="agent-bridge (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/bridge/PrivateApi.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/bridge/AsyncApi.class</Jar>
@@ -107,7 +107,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Fri, 6 Mar 2026 09:44:00 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_482" vm_version="25.482-b08" cpu_seconds="13.70" clock_seconds="13.00" peak_mbytes="219.44" alloc_mbytes="910.50" gc_seconds="0.46">
+  <FindBugsSummary timestamp="Sat, 7 Mar 2026 09:34:44 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_482" vm_version="25.482-b08" cpu_seconds="13.38" clock_seconds="12.79" peak_mbytes="219.62" alloc_mbytes="910.50" gc_seconds="0.45">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
