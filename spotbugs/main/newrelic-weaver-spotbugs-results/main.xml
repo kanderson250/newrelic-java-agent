@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1780138597251" analysisTimestamp="1780138597251" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1780225482316" analysisTimestamp="1780225482316" release="">
   <Project projectName="newrelic-weaver (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/MethodProcessors$3.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/build/classes/java/main/com/newrelic/weave/MethodProcessors.class</Jar>
@@ -160,7 +160,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-weaver/src/main/kotlin</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sat, 30 May 2026 10:56:37 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_492" vm_version="25.492-b09" cpu_seconds="26.17" clock_seconds="15.71" peak_mbytes="406.36" alloc_mbytes="910.50" gc_seconds="0.62">
+  <FindBugsSummary timestamp="Sun, 31 May 2026 11:04:42 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_492" vm_version="25.492-b09" cpu_seconds="24.93" clock_seconds="15.59" peak_mbytes="412.76" alloc_mbytes="910.50" gc_seconds="0.69">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
