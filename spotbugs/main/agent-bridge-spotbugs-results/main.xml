@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1781536266225" analysisTimestamp="1781536266225" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1781616895920" analysisTimestamp="1781616895920" release="">
   <Project projectName="agent-bridge (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/instrumentation/InstrumentationType.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/instrumentation/context/ModifiedClassloader.class</Jar>
@@ -107,7 +107,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 15 Jun 2026 15:11:06 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_492" vm_version="25.492-b09" cpu_seconds="12.75" clock_seconds="12.34" peak_mbytes="264.39" alloc_mbytes="910.50" gc_seconds="0.39">
+  <FindBugsSummary timestamp="Tue, 16 Jun 2026 13:34:55 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_492" vm_version="25.492-b09" cpu_seconds="11.13" clock_seconds="10.40" peak_mbytes="219.33" alloc_mbytes="910.50" gc_seconds="0.41">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
