@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1782042710326" analysisTimestamp="1782042710326" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1782139340837" analysisTimestamp="1782139340837" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/AsyncApiImpl.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/service/SpanEventsServiceFactory.class</Jar>
@@ -1425,7 +1425,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 21 Jun 2026 11:51:50 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_492" vm_version="25.492-b09" cpu_seconds="69.18" clock_seconds="37.85" peak_mbytes="606.07" alloc_mbytes="910.50" gc_seconds="1.60">
+  <FindBugsSummary timestamp="Mon, 22 Jun 2026 14:42:20 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_492" vm_version="25.492-b09" cpu_seconds="63.14" clock_seconds="34.62" peak_mbytes="561.07" alloc_mbytes="910.50" gc_seconds="1.77">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
