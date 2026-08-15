@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1786701944177" analysisTimestamp="1786701944177" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1786786306361" analysisTimestamp="1786786306361" release="">
   <Project projectName="agent-model (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/SpanEvent$1.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/SpanCategory.class</Jar>
@@ -29,7 +29,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Fri, 14 Aug 2026 10:05:44 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_502" vm_version="25.502-b07" cpu_seconds="9.67" clock_seconds="10.23" peak_mbytes="184.79" alloc_mbytes="910.50" gc_seconds="0.37">
+  <FindBugsSummary timestamp="Sat, 15 Aug 2026 09:31:46 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_502" vm_version="25.502-b07" cpu_seconds="9.71" clock_seconds="10.00" peak_mbytes="191.49" alloc_mbytes="910.50" gc_seconds="0.39">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
