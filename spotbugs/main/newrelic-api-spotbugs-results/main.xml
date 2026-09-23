@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1790085536717" analysisTimestamp="1790085536717" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1790172764030" analysisTimestamp="1790172764030" release="">
   <Project projectName="newrelic-api (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/NoOpAgent$10.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/LlmFeedbackEventAttributes$Builder.class</Jar>
@@ -105,7 +105,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 22 Sep 2026 13:58:56 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="6.00" clock_seconds="4.53" peak_mbytes="208.66" alloc_mbytes="910.50" gc_seconds="0.24">
+  <FindBugsSummary timestamp="Wed, 23 Sep 2026 14:12:44 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="9.49" clock_seconds="8.19" peak_mbytes="211.94" alloc_mbytes="910.50" gc_seconds="0.35">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
