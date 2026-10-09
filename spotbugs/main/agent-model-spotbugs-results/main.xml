@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1791475994842" analysisTimestamp="1791475994842" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1791561295574" analysisTimestamp="1791561295574" release="">
   <Project projectName="agent-model (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/SyntheticsIds.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/SpanCategory.class</Jar>
@@ -29,7 +29,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Thu, 8 Oct 2026 16:13:14 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="8.83" clock_seconds="9.69" peak_mbytes="207.27" alloc_mbytes="910.50" gc_seconds="0.40">
+  <FindBugsSummary timestamp="Fri, 9 Oct 2026 15:54:55 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="8.94" clock_seconds="9.29" peak_mbytes="206.85" alloc_mbytes="910.50" gc_seconds="0.32">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
