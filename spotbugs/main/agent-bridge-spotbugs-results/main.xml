@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1792072900600" analysisTimestamp="1792072900600" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1792158639729" analysisTimestamp="1792158639729" release="">
   <Project projectName="agent-bridge (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/bridge/StatusCodePolicy.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/build/classes/java/main/com/newrelic/agent/bridge/NoOpJmxApi.class</Jar>
@@ -107,7 +107,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-bridge/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Thu, 15 Oct 2026 14:01:40 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="10.75" clock_seconds="10.42" peak_mbytes="274.94" alloc_mbytes="910.50" gc_seconds="0.42">
+  <FindBugsSummary timestamp="Fri, 16 Oct 2026 13:50:39 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="8.05" clock_seconds="7.45" peak_mbytes="275.15" alloc_mbytes="910.50" gc_seconds="0.37">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
