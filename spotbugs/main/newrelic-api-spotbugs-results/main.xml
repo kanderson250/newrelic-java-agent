@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1793725139794" analysisTimestamp="1793725139794" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1793811429433" analysisTimestamp="1793811429433" release="">
   <Project projectName="newrelic-api (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/ConcurrentHashMapHeaders.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/MessageProduceParameters$Builder.class</Jar>
@@ -105,7 +105,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 3 Nov 2026 16:58:59 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="10.57" clock_seconds="8.33" peak_mbytes="212.11" alloc_mbytes="910.50" gc_seconds="0.40">
+  <FindBugsSummary timestamp="Wed, 4 Nov 2026 16:57:09 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="10.20" clock_seconds="8.49" peak_mbytes="207.86" alloc_mbytes="910.50" gc_seconds="0.41">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
