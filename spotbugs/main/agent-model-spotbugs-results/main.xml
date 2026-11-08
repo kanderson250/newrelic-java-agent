@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1794065491892" analysisTimestamp="1794065491892" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1794153107976" analysisTimestamp="1794153107976" release="">
   <Project projectName="agent-model (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/LlmCustomInsightsEvent.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/build/classes/java/main/com/newrelic/agent/model/AttributeFilter$PassEverythingAttributeFilter.class</Jar>
@@ -29,7 +29,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/agent-model/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sat, 7 Nov 2026 15:31:31 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="10.10" clock_seconds="10.74" peak_mbytes="181.04" alloc_mbytes="910.50" gc_seconds="0.48">
+  <FindBugsSummary timestamp="Sun, 8 Nov 2026 15:51:47 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_504" vm_version="25.504-b01" cpu_seconds="7.11" clock_seconds="6.96" peak_mbytes="208.02" alloc_mbytes="910.50" gc_seconds="0.37">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
