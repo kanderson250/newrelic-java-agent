@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1795366694566" analysisTimestamp="1795366694566" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1795467349402" analysisTimestamp="1795467349402" release="">
   <Project projectName="newrelic-agent (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/api/agent/NewRelicApiImplementation.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/build/classes/java/main/com/newrelic/agent/CrossProcessTransactionState.class</Jar>
@@ -1425,7 +1425,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-agent/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 22 Nov 2026 16:58:14 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_512" vm_version="25.512-b09" cpu_seconds="50.53" clock_seconds="27.59" peak_mbytes="601.51" alloc_mbytes="910.50" gc_seconds="1.36">
+  <FindBugsSummary timestamp="Mon, 23 Nov 2026 20:55:49 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_512" vm_version="25.512-b09" cpu_seconds="52.79" clock_seconds="29.79" peak_mbytes="595.88" alloc_mbytes="910.50" gc_seconds="1.48">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
