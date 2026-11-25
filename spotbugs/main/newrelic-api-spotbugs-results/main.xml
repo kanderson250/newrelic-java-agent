@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.3" sequence="0" timestamp="1795550639890" analysisTimestamp="1795550639890" release="">
+<BugCollection version="4.7.3" sequence="0" timestamp="1795633547901" analysisTimestamp="1795633547901" release="">
   <Project projectName="newrelic-api (spotbugsMain)">
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/DatastoreParameters$1.class</Jar>
     <Jar>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/build/classes/java/main/com/newrelic/api/agent/Segment.class</Jar>
@@ -105,7 +105,7 @@
     <SrcDir>/home/runner/work/newrelic-java-agent/newrelic-java-agent/newrelic-api/src/main/java</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Tue, 24 Nov 2026 20:03:59 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_512" vm_version="25.512-b09" cpu_seconds="11.77" clock_seconds="8.85" peak_mbytes="211.01" alloc_mbytes="910.50" gc_seconds="0.31">
+  <FindBugsSummary timestamp="Wed, 25 Nov 2026 19:05:47 +0000" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_512" vm_version="25.512-b09" cpu_seconds="7.33" clock_seconds="5.91" peak_mbytes="212.15" alloc_mbytes="910.50" gc_seconds="0.35">
     <FindBugsProfile></FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
